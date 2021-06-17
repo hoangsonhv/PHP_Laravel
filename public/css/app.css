@@ -58,7 +58,7 @@ form.example::after {
 
 .aaa{
     max-width: 1167px;
-    margin-left: 183px;
+    margin: auto;
 }
 
 
@@ -99,7 +99,7 @@ form.example::after {
 }
 .main-form .form-group label{
     float: left;
-    width: 70px;
+    width: 100px;
 }
 .main-form .form-group input{
     height: 40px;
@@ -126,18 +126,18 @@ form.example::after {
     margin-bottom: 25px;
 }
 
-.main-form button{
-    color: white;
-    width: 140px;
-    background-color: red;
-    margin-left: 40%;
-    font-size: 18px;
-    height: 50px;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    margin-top: 40px;
-}
+/*.main-form button{*/
+/*    color: white;*/
+/*    width: 140px;*/
+/*    background-color: red;*/
+/*    margin-left: 40%;*/
+/*    font-size: 18px;*/
+/*    height: 50px;*/
+/*    border-radius: 4px;*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    margin-top: 40px;*/
+/*}*/
 .gh{
     padding: 0;
     background-color:#F5F5F5;

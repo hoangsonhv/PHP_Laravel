@@ -18,7 +18,7 @@
     <!-- Content Wrapper. Contains page content -->
    @yield("main")
     <!-- /.content-wrapper -->
-    <x-footer/>
+
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">

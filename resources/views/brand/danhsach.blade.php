@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Category</h1>
+                        <h1 class="m-0">Brand</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Category</li>
+                            <li class="breadcrumb-item active">Brand</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -25,7 +25,7 @@
                         <h3 class="card-title">Danh sách</h3>
                         <div class="card-tools">
                             <div class="input-group input-group-sm" style="width: 150px;">
-                                <a href="{{url("/categories/themmoi")}}" class="btn btn-outline-primary">Thêm mới</a>
+                                <a href="{{url("/brands/themmoi1")}}" class="btn btn-outline-primary">Thêm mới</a>
                             </div>
                         </div>
                     </div>
@@ -36,22 +36,27 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Updated At</th>
-                                <th>Created At</th>
+                                <th>Year</th>
+                                <th>Product_id</th>
+                                <th>created_at</th>
+                                <th>updated_at</th>
+                                <th></th>
                                 <th></th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach ($category as $cat)
+                            @foreach ($brands as $brand)
                                 <tr>
-                                    <td>{{$cat->id}}</td>
-                                    <td>{{$cat->name}}</td>
-                                    <td>{{$cat->created_at}}</td>
-                                    <td>{{$cat->updated_at}}</td>
-                                    <td><a href="{{url("categories/edit",["id"=>$cat->id])}}">Sửa</a></td>
+                                    <td>{{$brand->id}}</td>
+                                    <td>{{$brand->name}}</td>
+                                    <td>{{$brand->year}}</td>
+                                    <td>{{$brand->product_id}}</td>
+                                    <td>{{$brand->created_at}}</td>
+                                    <td>{{$brand->updated_at}}</td>
+                                    <td><a href="{{url("brands/edit1",["id"=>$brand->id])}}">Sửa</a></td>
                                     <td>
-                                        <a href="{{url("categories/delete",["id"=>$cat->id])}}">
-                                            <form method="post" action="{{url("categories/delete",["id"=>$cat->id])}}">
+                                        <a href="{{url("brands/delete1",["id"=>$brand->id])}}">
+                                            <form method="post" action="{{url("brands/delete1",["id"=>$brand->id])}}">
                                                 @method('DELETE')
                                                 @csrf
                                                 <button type="submit">Delete</button>
