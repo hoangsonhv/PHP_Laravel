@@ -26,15 +26,15 @@
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body ">
-                        <form action="{{url("brands/update1",["id"=>$brands->id])}}" method="post">
+                        <form action="{{url("brands/update1",["id"=>$brd->id])}}" method="post">
                             @csrf
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" name="name" value="{{$brands->name}}" class="form-control" placeholder="Tên..">
+                                <input type="text" name="name" value="{{$brd->name}}" class="form-control" placeholder="Tên..">
                             </div>
                             <div class="form-group">
                                 <label>Image</label>
-                                <input type="text" name="year" value="{{$brands->year}}" class="form-control" placeholder="Year..">
+                                <input type="text" name="year" value="{{$brd->year}}" class="form-control" placeholder="Year..">
                             </div>
                             <div class="form-group">
                                 <label>Category_id</label>
