@@ -51,7 +51,7 @@
                                 <tr>
                                     <td>{{$item->id}}</td>
                                     <td>{{$item->name}}</td>
-                                    <td>{{$item->iamge}}</td>
+                                    <td><img src="{{url("$item->image")}}"></td>
                                     <td>{{$item->description}}</td>
                                     <td>{{$item->price}}</td>
                                     <td>{{$item->qty}}</td>
@@ -72,6 +72,9 @@
                             @endforeach
                             </tbody>
                         </table>
+                        <div class="card-footer">
+                            {!! $product->links("vendor.pagination.default") !!}
+                        </div>
                     </div>
                     <!-- /.card-body -->
                 </div>

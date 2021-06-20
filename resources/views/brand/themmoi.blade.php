@@ -33,18 +33,6 @@
                         <input type="text" value="{{old("year")}}" class="ipf" id="name" name="year" >
                         @error("year")<div class="alert alert-danger" style="width: 100%;" >{{$message}}</div>@enderror
                     </div>
-                    <div class="form-group">
-                        <label>Product_id</label>
-                        <select name="product_id" class="form-control" >
-                            <option value="0">Select a Product</option>
-                                @foreach($products as $pro)
-                                <option  @if(old("product_id")==$pro->id)selected @endif value="{{$pro->id}}">
-                                    {{$pro->name}}
-                                </option>
-                                @endforeach
-                        </select>
-                        @error("product_id")<div class="alert alert-danger" style="width: 100%;" >{{$message}}</div>@enderror
-                    </div>
                     <button type="submit" name="dangky">Thêm</button>
                 </form>
             </div>

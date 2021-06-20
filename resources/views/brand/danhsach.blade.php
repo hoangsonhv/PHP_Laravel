@@ -37,7 +37,6 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Year</th>
-                                <th>Product_id</th>
                                 <th>created_at</th>
                                 <th>updated_at</th>
                                 <th></th>
@@ -50,7 +49,6 @@
                                     <td>{{$brand->id}}</td>
                                     <td>{{$brand->name}}</td>
                                     <td>{{$brand->year}}</td>
-                                    <td>{{$brand->product_id}}</td>
                                     <td>{{$brand->created_at}}</td>
                                     <td>{{$brand->updated_at}}</td>
                                     <td><a href="{{url("brands/edit1",["id"=>$brand->id])}}">Sửa</a></td>
@@ -67,6 +65,9 @@
                             @endforeach
                             </tbody>
                         </table>
+                        <div class="card-footer">
+                            {!! $brands->links("vendor.pagination.default") !!}
+                        </div>
                     </div>
                     <!-- /.card-body -->
                 </div>

@@ -37,16 +37,6 @@
                                 <input type="text" name="year" value="{{$brd->year}}" class="form-control" placeholder="Year..">
                             </div>
                             <div class="form-group">
-                                <label>Category_id</label>
-                                <select name="product_id" class="form-control" >
-                                    @foreach($product as $pro)
-                                        <option value="{{$pro->id}}">
-                                            {{$pro->name}}
-                                        </option>
-                                    @endforeach
-                                </select>
-                            </div>
-                            <div class="form-group">
                                 <button type="submit" class="btn btn-outline-primary">Submit</button>
                             </div>
                         </form>

@@ -28,9 +28,9 @@
                         <input type="text" value="{{old("name")}}" class="ipf" id="name" name="name" >
                         @error("name")<div class="alert alert-danger" style="width: 100%;" >{{$message}}</div>@enderror
                     </div>
-                    <div class="form-group ">
+                    <div class="form-group">
                         <label>Image:</label>
-                        <input type="text"  value="{{old("image")}}" class="ipf" id="name" name="image" >
+                        <input type="file"  value="{{old("image")}}" class="ipf"  name="image" >
                     </div>
                     <div class="form-group">
                         <label>Description:</label>
